@@ -16,17 +16,17 @@ Die folgenden Argumente sind verfügbar, alle Argumente sind optional:
 
 `src` = Eine Datei, URL oder ID für die unterstützten Lightbox-Modi.  
 `mode` = Ein unterstützter Lightbox-Modus, `image`, `html`, `iframe` oder `youtube`  
-`label` = Beschriftung für den Link zum Öffnen der Lightbox.  
+`label` = Beschriftung oder Alternativtext für den Link zum Öffnen der Lightbox.  
 `group` = Die Gruppe für das Medien-Element.  
 `width` and `height` = Abmessungen des Elements, falls zutreffend.
 
 ## Beispiele
 
-Ein Bild mit der Lightbox öffnen und der Gruppe Yellow zuordnen: 
+Ein Vorschaubild mit der Lightbox öffnen und der Gruppe Yellow zuordnen: 
 
-    [lightbox photo.jpg image "Open image" yellow]
+    [lightbox photo.jpg image Beispiel yellow 50%]
 
-Einen Bild-Link zum Öffnen der Lightbox erstellen:
+Einen traditionellen Markdown-Bild-Link zum Öffnen der Lightbox erstellen:
 
     [[image photo.jpg Beispiel - 50%]](/media/images/photo.jpg){.lightbox}
 

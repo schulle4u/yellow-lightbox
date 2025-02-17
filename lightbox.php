@@ -18,7 +18,7 @@ class YellowLightbox {
         if ($name=="lightbox" && ($type=="block" || $type=="inline")) {
             list($src, $mode, $label, $group, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($mode)) $mode = "image";
-            if (is_string_empty($label)) $label = "Open";
+            if (is_string_empty($label)) $label = $this->yellow->language->getTextHtml("imageDefaultAlt");
             if (is_string_empty($width)) $width = "100%";
             if (is_string_empty($height)) $height = $width;
             $output = "<div class=\"".htmlspecialchars($name)."-init\">\n";
@@ -29,7 +29,7 @@ class YellowLightbox {
                     } else {
                         $imagePath = $this->yellow->lookup->normaliseUrl("", "", "", $src);
                     }
-                    $output .= "<a href=\"".htmlspecialchars($imagePath)."\" class=\"lightbox\" data-group=\"".htmlspecialchars($group)."\">".htmlspecialchars($label)."</a>\n"; break;
+                    $output .= "<a href=\"".htmlspecialchars($imagePath)."\" class=\"lightbox\" data-group=\"".htmlspecialchars($group)."\"><img src=\"".htmlspecialchars($imagePath)."\" alt=\"".htmlspecialchars($label)."\" width=\"".htmlspecialchars($width)."\" height=\"".htmlspecialchars($height)."\" /></a>\n"; break;
                 case "html": $output .= "<a href=\"#".htmlspecialchars($src)."\" data-type=\"html\" data-group=\"".htmlspecialchars($group)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
                 case "iframe": $output .= "<a href=\"".htmlspecialchars($this->yellow->lookup->normaliseUrl("", "", "", $src))."\" data-type=\"iframe\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
                 case "youtube": $output .= "<a href=\"https://www.youtube.com/watch?v=".rawurlencode($src)."\" data-type=\"youtube\" data-id=\"".htmlspecialchars($src)."\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>"; break;
