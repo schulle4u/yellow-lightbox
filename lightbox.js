@@ -1,19 +1,22 @@
 // Lightbox extension, http://github.com/schulle4u/yellow-lightbox
 
-var initLightboxFromDOM = function() {
-    var lightboxConfig = document.getElementById("lightboxConfig");
-    var lightboxNav = lightboxConfig.getAttribute("data-lightboxNav");
-    var lightboxAutoplay = lightboxConfig.getAttribute("data-lightboxAutoplay");
-    var lightboxPreviousLabel = lightboxConfig.getAttribute("data-lightboxPreviousLabel");
-    var lightboxNextLabel = lightboxConfig.getAttribute("data-lightboxNextLabel");
-    var lightboxCloseLabel = lightboxConfig.getAttribute("data-lightboxCloseLabel");
+const initLightboxFromDOM = () => {
+    const lightboxConfig = document.getElementById("lightboxConfig");
+    const {
+        lightboxNav,
+        lightboxAutoplay,
+        lightboxPreviousLabel,
+        lightboxNextLabel,
+        lightboxCloseLabel
+    } = lightboxConfig.dataset;
+    const autoplay = lightboxAutoplay === "true";
     const tobii = new Tobii({
         nav: lightboxNav,
         navLabel: [lightboxPreviousLabel, lightboxNextLabel],
         closeLabel: lightboxCloseLabel,
-        autoplayVideo: lightboxAutoplay,
-        autoplayAudio: lightboxAutoplay
+        autoplayVideo: autoplay,
+        autoplayAudio: autoplay
     });
 };
 
-window.addEventListener("DOMContentLoaded", initLightboxFromDOM, false);
+document.addEventListener("DOMContentLoaded", initLightboxFromDOM);

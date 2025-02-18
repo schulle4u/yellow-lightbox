@@ -50,11 +50,11 @@ class YellowLightbox {
         }
         if ($name=="footer") {
             $output = "<div id=\"lightboxConfig\"";
-            $output .= " data-lightboxNav=\"".htmlspecialchars($this->yellow->system->get("lightboxNav"))."\"";
-            $output .= " data-lightboxAutoplay=\"".htmlspecialchars($this->yellow->system->get("lightboxAutoplay"))."\"";
-            $output .= " data-lightboxPreviousLabel=\"".$this->yellow->language->getTextHtml("corePaginationPrevious")."\"";
-            $output .= " data-lightboxNextLabel=\"".$this->yellow->language->getTextHtml("corePaginationNext")."\"";
-            $output .= " data-lightboxCloseLabel=\"".$this->yellow->language->getTextHtml("editOkButton")."\"";
+            $output .= " data-lightbox-nav=\"".htmlspecialchars($this->yellow->system->get("lightboxNav"))."\"";
+            $output .= " data-lightbox-autoplay=\"".htmlspecialchars($this->yellow->system->get("lightboxAutoplay"))."\"";
+            $output .= " data-lightbox-previous-label=\"".$this->yellow->language->getTextHtml("corePaginationPrevious")."\"";
+            $output .= " data-lightbox-next-label=\"".$this->yellow->language->getTextHtml("corePaginationNext")."\"";
+            $output .= " data-lightbox-close-label=\"".$this->yellow->language->getTextHtml("editOkButton")."\"";
             $output .="></div>\n";
         }
         return $output;
