@@ -4,6 +4,8 @@
 
 Eine Lightbox für verschiedene Medientypen. 
 
+<p align="center"><img src="SCREENSHOT.png" alt="Bildschirmfoto"></p>
+
 ## Wie man eine Erweiterung installiert
 
 [ZIP-Datei herunterladen](https://github.com/schulle4u/yellow-lightbox/archive/refs/heads/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).

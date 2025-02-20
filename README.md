@@ -4,6 +4,8 @@
 
 A lightbox for different media types. 
 
+<p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
+
 ## How to install an extension
 
 [Download ZIP file](https://github.com/schulle4u/yellow-lightbox/archive/refs/heads/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
