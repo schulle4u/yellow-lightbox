@@ -25,11 +25,14 @@ class YellowLightbox {
             switch($mode) {
                 case "image": 
                     if (!preg_match("/^\w+:/", $src)) {
-                        $imagePath = $this->yellow->lookup->findMediaDirectory("coreImageLocation").$src;
+                        $url = $this->yellow->lookup->normaliseUrl(
+                            $this->yellow->system->get("coreServerScheme"),
+                            $this->yellow->system->get("coreServerAddress"),
+                            $this->yellow->system->get("coreServerBase"), $src);
                     } else {
-                        $imagePath = $this->yellow->lookup->normaliseUrl("", "", "", $src);
+                        $url = $this->yellow->lookup->normaliseUrl("", "", "", $src);
                     }
-                    $output .= "<a href=\"".htmlspecialchars($imagePath)."\" class=\"lightbox\" data-group=\"".htmlspecialchars($group)."\"><img src=\"".htmlspecialchars($imagePath)."\" alt=\"".htmlspecialchars($label)."\" width=\"".htmlspecialchars($width)."\" height=\"".htmlspecialchars($height)."\" /></a>\n"; break;
+                    $output .= "<a href=\"".htmlspecialchars($url)."\" class=\"lightbox\" data-group=\"".htmlspecialchars($group)."\"><img src=\"".htmlspecialchars($url)."\" alt=\"".htmlspecialchars($label)."\" width=\"".htmlspecialchars($width)."\" height=\"".htmlspecialchars($height)."\" /></a>\n"; break;
                 case "html": $output .= "<a href=\"#".htmlspecialchars($src)."\" data-type=\"html\" data-group=\"".htmlspecialchars($group)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
                 case "iframe": $output .= "<a href=\"".htmlspecialchars($this->yellow->lookup->normaliseUrl("", "", "", $src))."\" data-type=\"iframe\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>\n"; break;
                 case "youtube": $output .= "<a href=\"https://www.youtube.com/watch?v=".rawurlencode($src)."\" data-type=\"youtube\" data-id=\"".htmlspecialchars($src)."\" data-group=\"".htmlspecialchars($group)."\" data-width=\"".htmlspecialchars($width)."\" data-height=\"".htmlspecialchars($height)."\" class=\"lightbox\">".htmlspecialchars($label)."</a>"; break;

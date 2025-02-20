@@ -24,7 +24,7 @@ The following arguments are available, all arguments are optional:
 
 Open a preview image with lightbox and associate it to the group Yellow: 
 
-    [lightbox photo.jpg image Example yellow 50%]
+    [lightbox /media/images/photo.jpg image Example yellow 50%]
 
 Create a traditional markdown image link to open in lightbox: 
 
