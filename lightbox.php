@@ -1,5 +1,5 @@
 <?php
-// Lightbox extension, http://github.com/schulle4u/yellow-lightbox
+// Lightbox extension, https://github.com/schulle4u/yellow-lightbox
 
 class YellowLightbox {
     const VERSION = "0.9.1";

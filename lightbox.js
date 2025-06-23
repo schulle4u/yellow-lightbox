@@ -1,4 +1,4 @@
-// Lightbox extension, http://github.com/schulle4u/yellow-lightbox
+// Lightbox extension, https://github.com/schulle4u/yellow-lightbox
 
 const initLightboxFromDOM = () => {
     const lightboxConfig = document.getElementById("lightboxConfig");
