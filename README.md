@@ -66,7 +66,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
  
 ## Acknowledgements
 
-This extension includes [Tobii v2.7.3 by Midzer](https://github.com/midzer/tobii). Thanks for the good work!
+This extension includes [Tobii 2.8.4 by Midzer](https://github.com/midzer/tobii). Thanks for the good work!
 
 ## Developer
 
