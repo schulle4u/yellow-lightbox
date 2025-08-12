@@ -2,7 +2,7 @@
 // Lightbox extension, https://github.com/schulle4u/yellow-lightbox
 
 class YellowLightbox {
-    const VERSION = "0.9.1";
+    const VERSION = "0.9.2";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -58,7 +58,7 @@ class YellowLightbox {
             $output .= " data-lightbox-previous-label=\"".$this->yellow->language->getTextHtml("corePaginationPrevious")."\"";
             $output .= " data-lightbox-next-label=\"".$this->yellow->language->getTextHtml("corePaginationNext")."\"";
             $output .= " data-lightbox-close-label=\"".$this->yellow->language->getTextHtml("editOkButton")."\"";
-            $output .="></div>\n";
+            $output .= "></div>\n";
         }
         return $output;
     }
