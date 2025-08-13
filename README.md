@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Lightbox 0.9.1
+# Lightbox 0.9.2
 
 A lightbox for different media types. 
 
@@ -66,7 +66,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
  
 ## Acknowledgements
 
-This extension includes [Tobii 2.8.4 by Midzer](https://github.com/midzer/tobii). Thanks for the good work!
+This extension includes [Tobii 2.8.5 by Midzer](https://github.com/midzer/tobii). Thanks for the good work!
 
 ## Developer
 
