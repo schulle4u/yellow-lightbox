@@ -17,8 +17,8 @@ Erstelle eine `[lightbox]`-Abkürzung.
 Die folgenden Argumente sind verfügbar, alle Argumente sind optional:
 
 `src` = Eine Datei, URL oder ID für die unterstützten Lightbox-Modi.  
-`mode` = Ein unterstützter Lightbox-Modus, `image`, `html`, `iframe` oder `youtube`  
 `label` = Beschriftung oder Alternativtext für den Link zum Öffnen der Lightbox.  
+`mode` = Ein unterstützter Lightbox-Modus, `image`, `html`, `iframe` oder `youtube`  
 `group` = Die Gruppe für das Medien-Element.  
 `width` and `height` = Abmessungen des Elements, falls zutreffend.
 
@@ -26,7 +26,7 @@ Die folgenden Argumente sind verfügbar, alle Argumente sind optional:
 
 Ein Vorschaubild mit der Lightbox öffnen und der Gruppe Yellow zuordnen: 
 
-    [lightbox /media/images/photo.jpg image Beispiel yellow 50%]
+    [lightbox /media/images/photo.jpg Beispiel image yellow 50%]
 
 Einen traditionellen Markdown-Bild-Link zum Öffnen der Lightbox erstellen:
 
@@ -34,11 +34,11 @@ Einen traditionellen Markdown-Bild-Link zum Öffnen der Lightbox erstellen:
 
 Ein Youtube-Video abspielen:
 
-    [lightbox fhs55HEl-Gc youtube "Play video"]
+    [lightbox fhs55HEl-Gc "Play video" youtube]
 
 Eine Website in einem Iframe öffnen:
 
-    [lightbox https://www.wikipedia.org iframe "Open Wikipedia" - 100%]
+    [lightbox https://www.wikipedia.org "Open Wikipedia" iframe - 100%]
 
 Inhaltsdatei mit HTML-Lightbox:
 
@@ -46,7 +46,7 @@ Inhaltsdatei mit HTML-Lightbox:
 ---
 Title: Example
 ---
-[lightbox selector html "Open HTML"]
+[lightbox selector "Open HTML" html]
 
 <div style="display:none;" markdown=1>
 

@@ -2,7 +2,7 @@
 // Lightbox extension, https://github.com/schulle4u/yellow-lightbox
 
 class YellowLightbox {
-    const VERSION = "0.9.2";
+    const VERSION = "0.9.3";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -16,9 +16,9 @@ class YellowLightbox {
     public function onParseContentElement($page, $name, $text, $attributes, $type) {
         $output = null;
         if ($name=="lightbox" && ($type=="block" || $type=="inline")) {
-            list($src, $mode, $label, $group, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
-            if (is_string_empty($mode)) $mode = "image";
+            list($src, $label, $mode, $group, $width, $height) = $this->yellow->toolbox->getTextArguments($text);
             if (is_string_empty($label)) $label = $this->yellow->language->getTextHtml("imageDefaultAlt");
+            if (is_string_empty($mode)) $mode = "image";
             if (is_string_empty($width)) $width = "100%";
             if (is_string_empty($height)) $height = $width;
             $output = "<div class=\"".htmlspecialchars($name)."-init\">\n";
