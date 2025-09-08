@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a></p>
 
-# Lightbox 0.9.2
+# Lightbox 0.9.3
 
 Eine Lightbox für verschiedene Medientypen. 
 
@@ -62,11 +62,10 @@ Title: Example
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `LightboxNav` = Zeige Navigationsschaltflächen in der Lightbox, true, false oder auto  
-`LightboxAutoplay` = Videos und Audios beim Öffnen der Lightbox automatisch abspielen, true oder false
 
 ## Danksagung
 
-Diese Erweiterung enthält [Tobii 2.8.5 von Midzer](https://github.com/midzer/tobii). Vielen Dank für die gute Arbeit!!
+Diese Erweiterung enthält [Tobii 3.0.0 von Midzer](https://github.com/midzer/tobii). Vielen Dank für die gute Arbeit!!
 
 ## Entwickler
 

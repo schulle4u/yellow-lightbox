@@ -2,14 +2,13 @@
 // Lightbox extension, https://github.com/schulle4u/yellow-lightbox
 
 class YellowLightbox {
-    const VERSION = "0.9.3";
+    const VERSION = "0.9.4";
     public $yellow;         // access to API
     
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("lightboxNav", "auto");
-        $this->yellow->system->setDefault("lightboxAutoplay", "false");
     }
     
     // Handle page content element
@@ -54,7 +53,6 @@ class YellowLightbox {
         if ($name=="footer") {
             $output = "<div id=\"lightboxConfig\"";
             $output .= " data-lightbox-nav=\"".htmlspecialchars($this->yellow->system->get("lightboxNav"))."\"";
-            $output .= " data-lightbox-autoplay=\"".htmlspecialchars($this->yellow->system->get("lightboxAutoplay"))."\"";
             $output .= " data-lightbox-previous-label=\"".$this->yellow->language->getTextHtml("corePaginationPrevious")."\"";
             $output .= " data-lightbox-next-label=\"".$this->yellow->language->getTextHtml("corePaginationNext")."\"";
             $output .= " data-lightbox-close-label=\"".$this->yellow->language->getTextHtml("editOkButton")."\"";
