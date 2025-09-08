@@ -11,7 +11,7 @@ const initLightboxFromDOM = () => {
     const tobii = new Tobii({
         nav: lightboxNav,
         navLabel: [lightboxPreviousLabel, lightboxNextLabel],
-        closeLabel: lightboxCloseLabel,
+        closeLabel: lightboxCloseLabel
     });
 };
 
