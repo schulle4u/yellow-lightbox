@@ -9,6 +9,7 @@ const initLightboxFromDOM = () => {
         lightboxCloseLabel
     } = lightboxConfig.dataset;
     const tobii = new Tobii({
+        captionToggle: false,
         nav: lightboxNav,
         navLabel: [lightboxPreviousLabel, lightboxNextLabel],
         closeLabel: lightboxCloseLabel
