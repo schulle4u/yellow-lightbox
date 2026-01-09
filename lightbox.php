@@ -2,7 +2,7 @@
 // Lightbox extension, https://github.com/schulle4u/yellow-lightbox
 
 class YellowLightbox {
-    const VERSION = "0.9.4";
+    const VERSION = "0.9.5";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -21,7 +21,7 @@ class YellowLightbox {
             if (is_string_empty($width)) $width = "100%";
             if (is_string_empty($height)) $height = $width;
             $output = "<div class=\"".htmlspecialchars($name)."-init\">\n";
-            switch($mode) {
+            switch ($mode) {
                 case "image": 
                     if (!preg_match("/^\w+:/", $src)) {
                         $url = $this->yellow->lookup->normaliseUrl(
