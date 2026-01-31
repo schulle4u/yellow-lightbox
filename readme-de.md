@@ -1,8 +1,6 @@
-<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a></p>
-
 # Lightbox 0.9.5
 
-Eine Lightbox für verschiedene Medientypen. 
+Eine Lightbox für verschiedene Medientypen. Entwickelt von Steffen Schultz.
 
 <p align="center"><img src="screenshot.png" alt="Bildschirmfoto"></p>
 
@@ -65,8 +63,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 ## Danksagung
 
-Diese Erweiterung enthält [Tobii 3.0.0 von Midzer](https://github.com/midzer/tobii). Vielen Dank für die gute Arbeit!!
+Diese Erweiterung enthält [Tobii 3.1.2 von Midzer](https://github.com/midzer/tobii). Vielen Dank für die gute Arbeit!!
 
-## Entwickler
-
-Steffen Schultz. [Hilfe finden](https://datenstrom.se/de/yellow/help/).
+Hast du Fragen? [Hilfe finden](https://datenstrom.se/de/yellow/help/).
