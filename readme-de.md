@@ -63,6 +63,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 ## Danksagung
 
-Diese Erweiterung enthält [Tobii 3.1.3 von Midzer](https://github.com/midzer/tobii). Vielen Dank für die gute Arbeit!!
+Diese Erweiterung enthält [Tobii 3.2.0 von Midzer](https://github.com/midzer/tobii). Vielen Dank für die gute Arbeit!!
 
 Hast du Fragen? [Hilfe finden](https://datenstrom.se/de/yellow/help/).
