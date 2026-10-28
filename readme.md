@@ -1,4 +1,4 @@
-# Lightbox 0.9.5
+# Lightbox 1.0.1
 
 A lightbox for different media types. Developed by Steffen Schultz.
 
@@ -63,6 +63,6 @@ The following settings can be configured in file `system/extensions/yellow-syste
  
 ## Acknowledgements
 
-This extension includes [Tobii 3.2.0 by Midzer](https://github.com/midzer/tobii). Thanks for the good work!
+This extension includes [Tobii 3.2.1 by Midzer](https://github.com/midzer/tobii). Thanks for the good work!
 
 Do you have questions? [Get help](https://datenstrom.se/yellow/help/).

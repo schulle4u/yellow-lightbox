@@ -2,7 +2,7 @@
 // Lightbox extension, https://github.com/schulle4u/yellow-lightbox
 
 class YellowLightbox {
-    const VERSION = "0.9.5";
+    const VERSION = "1.0.1";
     public $yellow;         // access to API
     
     // Handle initialisation
